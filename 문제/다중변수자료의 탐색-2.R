@@ -57,16 +57,4 @@ myds <- Ionosphere[,3:12]
 cor(myds)
 plot(myds[,7], myds[,9])
 cor(myds[,7], myds[,9])
-n2 <- 0
-for (i in 1:9) {
-  for (j in 1:i+1) {
-    n1 <- cor(myds[,i], myds[,j])
-    if(n1 != 1 & n1 > n2) {
-      n2 <- n1
-      i.n <- c(i,j)
-    }
-  }
-}
-n2
-i.n
-cor(myds[,3],myds[,4])
+
