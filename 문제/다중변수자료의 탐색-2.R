@@ -23,6 +23,7 @@ cor(trees)
 
 # 문제 11
 Orange
+color <- c("red","green","yellow","blue","pink")
 plot(
   Orange$age,
   Orange$circumference,
@@ -41,6 +42,7 @@ plot(myds[,-10])
 cor(myds[,-10])
 # (4) myds에서 Type을 제외한 변수들 간의 분포를 산점도를 통해 보이되 Type을
 # 그룹으로 하여 그룹별로 점의 색을 달리하시오.
+color <- c("red","green","yellow","blue","pink","black")
 plot(
   myds[,-10],
   col = color[myds[,10]],
